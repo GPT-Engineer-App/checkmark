@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Box, Heading, Input, Button, Text, VStack, HStack, IconButton, Spacer, Checkbox } from "@chakra-ui/react";
+import { Box, Heading, Input, Button, Text, VStack, HStack, IconButton, Spacer, Checkbox, Link } from "@chakra-ui/react";
 import { FaPlus, FaTrash } from "react-icons/fa";
 
 const Index = () => {
@@ -26,6 +26,9 @@ const Index = () => {
 
   return (
     <Box maxWidth="400px" margin="auto" mt={8}>
+      <Link href="/contact" mb={4} display="block">
+        Contact Us
+      </Link>
       <Heading mb={8}>Todo App</Heading>
       <HStack mb={8}>
         <Input value={inputValue} onChange={(e) => setInputValue(e.target.value)} placeholder="Enter a todo" />
